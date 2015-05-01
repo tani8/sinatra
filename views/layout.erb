@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf8">
+  <title><%= @title + ' | Recall' %></title>
+  <link href="/reset.css" rel="stylesheet">
+  <link href="/style.css" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <hgroup>
+      <h1><a href="/">Recall</a></h1>
+      <h2>'cause you're too busy to remember</h2>
+    </hgroup>
+  </header>
+
+  <div id="main">
+    <!-- layout.erb(this file) creates structure for all routes, and yield is replaced with the content given to a specific route-->
+    <%= yield %>
+  </div>
+
+  <footer>
+    <p><small>An app for <a href="http://net.tutsplus.com">Nettuts+</a>.</small></p>
+  </footer>
+</body>
+</html>
